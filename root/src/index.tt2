@@ -60,9 +60,9 @@
         <nav>
             <menu>
                 <li><a href="/about/potters_wheel_experience">Potter's Wheel Experience</a></li>
-                <li><a href="/classes">Classes</a></li>
+                <li><a href="/classes/">Classes</a></li>
                 <li><a href="/about/preschool">Preschool Classes</a></li>                
-                <li><a href="/camps">Summer Camps</a></li>
+                <li><a href="/camps/">Summer Camps</a></li>
                 <li><a href="/about/school_programs/">School Programs</a></li>
                 <li><a href="/about/field_trips/">Field Trips</a></li>
                 <li><a href="/about/date_night/">Date Night</a></li>

@@ -64,7 +64,11 @@ has template_resource => (
         my $s = shift;
         [
             'SuperAwesomeCool::Resource::Template',
-            { root => $s->param('template_root'), }
+            {
+                root      => $s->param('template_root'),
+                extension => '.tt2',
+                dir_index => 'index.tt2',
+            }
         ];
     },
     dependencies => ['template_root'],
@@ -76,9 +80,10 @@ has resource_map => (
     block => sub {
         my $s = shift;
         {
-            '/'            => $s->param('template_resource'),
+            '/static'      => ['Magpie::Resource::File', { root => './root/static'} ],
             '/user'        => $s->param('user_resource'),
             '/reservation' => $s->param('reservation_resource'),
+            '/'            => $s->param('template_resource'),
         };
     },
     dependencies => [
