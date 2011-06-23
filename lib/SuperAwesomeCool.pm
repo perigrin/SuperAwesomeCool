@@ -20,29 +20,45 @@ has kioku => (
 );
 
 has reservation_resource => (
-    isa   => 'HashRef',
+    isa   => 'ArrayRef',
     is    => 'ro',
     block => sub {
         my $s = shift;
-        {
-            class  => 'SuperAwesomeCool::Resource::Reservation',
-            params => { kioku => $s->param('kioku') }
-        };
+        [
+            'SuperAwesomeCool::Resource::Reservation',
+            { kioku => $s->param('kioku') }
+        ];
     },
     dependencies => ['kioku'],
 );
 
 has user_resource => (
-    isa   => 'HashRef',
+    isa   => 'ArrayRef',
     is    => 'ro',
     block => sub {
         my $s = shift;
-        {
-            class  => 'SuperAwesomeCool::Resource::User',
-            params => { kioku => $s->param('kioku') }
-        };
+        [ 'SuperAwesomeCool::Resource::User', { kioku => $s->param('kioku') } ];
     },
     dependencies => ['kioku'],
+);
+
+has template_root => (
+    isa   => 'Str',
+    is    => 'ro',
+    value => './root/src',
+);
+
+has template_resource => (
+    isa   => 'ArrayRef',
+    is    => 'ro',
+    block => sub {
+        my $s = shift;
+        [
+            'SuperAwesomeCool::Resource::Template',
+            { root => $s->param('template_root'), }
+        ];
+    },
+    dependencies => ['template_root'],
 );
 
 has resource_map => (
@@ -51,12 +67,18 @@ has resource_map => (
     block => sub {
         my $s = shift;
         {
-            '/'            => 'SuperAwesomeCool::Resource::Template',
+            '/'            => $s->param('template_resource'),
             '/user'        => $s->param('user_resource'),
             '/reservation' => $s->param('reservation_resource'),
         };
     },
-    dependencies => [ 'user_resource', 'reservation_resource' ],
+    dependencies => [
+        qw(
+          user_resource
+          reservation_resource
+          template_resource
+          )
+    ],
 );
 
 has app => (
@@ -68,14 +90,7 @@ has app => (
         my $urlmap = Plack::App::URLMap->new( DEBUG => 1 );
         while ( my ( $path, $resource ) = each %$resources ) {
             my $builder = Plack::Builder->new;
-            if ( ref $resource eq 'HASH' ) {
-                $builder->add_middleware( 'Magpie',
-                    pipeline => [ $resource->{class} => $resource->{params} ],
-                );
-            }
-            else {
-                $builder->add_middleware( 'Magpie', resource => $resource );
-            }
+            $builder->add_middleware( 'Magpie', pipeline => $resource );
             $urlmap->map( $path => $builder->to_app );
         }
         return $urlmap->to_app;
