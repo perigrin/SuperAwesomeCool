@@ -1,11 +1,8 @@
 package SuperAwesomeCool;
 use Moose;
 use Bread::Board::Declare;
-
 use Plack::Builder;
 use Plack::Middleware::Magpie;
-
-use Data::Printer;
 
 has dsn => (
     isa   => 'Str',
@@ -16,8 +13,26 @@ has dsn => (
 has kioku => (
     isa          => 'SuperAwesomeCool::KiouDB',
     is           => 'ro',
+    lifecycle    => 'Singleton',
     dependencies => ['dsn'],
 );
+
+has template_root => (
+    isa   => 'Str',
+    is    => 'ro',
+    value => './root/src',
+);
+
+# if we can allow Instances of resources to be added to the pipeline
+# we can change this to use constructor injection
+#
+# has user_resource => (
+#     isa          => 'SuperAwesomeCool::Resource::User',
+#     is           => 'ro',
+#     dependencies => ['kioku'],
+# );
+#
+# and potentially the "infer" magic that I don't really understand
 
 has reservation_resource => (
     isa   => 'ArrayRef',
@@ -40,12 +55,6 @@ has user_resource => (
         [ 'SuperAwesomeCool::Resource::User', { kioku => $s->param('kioku') } ];
     },
     dependencies => ['kioku'],
-);
-
-has template_root => (
-    isa   => 'Str',
-    is    => 'ro',
-    value => './root/src',
 );
 
 has template_resource => (
