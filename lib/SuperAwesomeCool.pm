@@ -42,7 +42,7 @@ has resource_map => (
 );
 
 has app => (
-    reader    => 'to_app',
+    isa       => 'Plack::Component',
     lifecycle => 'Singleton',
     block     => sub {
         my ($s) = @_;
@@ -53,8 +53,9 @@ has app => (
             $builder->add_middleware( 'Magpie', pipeline => $resource );
             $urlmap->map( $path => $builder->to_app );
         }
-        return $urlmap->to_app;
+        return $urlmap;
     },
+    handles      => ['to_app'],
     dependencies => ['resource_map'],
 );
 
