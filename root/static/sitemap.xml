@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://superawesomecool.org/</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://superawesomecool.org/classes</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://superawesomecool.org/camps</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://superawesomecool.org/about/field_trips</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://superawesomecool.org/about/private_instruction</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://superawesomecool.org/about/birthday_parties</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://superawesomecool.org/about/workshops</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://superawesomecool.org/about/contact</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://superawesomecool.org/classes/orlando</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://superawesomecool.org/classes/kissimmee</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://superawesomecool.org/classes/st_cloud</loc>
+  <priority>0.64</priority>
+</url>
+</urlset>

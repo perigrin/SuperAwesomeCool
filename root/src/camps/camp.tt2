@@ -1,0 +1,12 @@
+[% WRAPPER common/page.tt2%]
+<h2><a href="[% c.uri_for('/camps') %]">Summer Camps</a> &raquo; [% rest.name %]</h2>
+<dl>
+<dt>Dates</dt><dd>[% rest.dates %]</dd>
+<dt>Cost</dt><dd>[% rest.cost %]</dd>
+<dt>Location</dt><dd>[% rest.location %]</dd>
+</dl>
+
+<p>[% rest.description || "[coming soon]" %]</p>
+
+
+[% END %]

@@ -1,0 +1,22 @@
+[% WRAPPER common/page.tt2 
+    title = 'Summer 2010 - Registration'
+%]
+
+<h2>Login</h2>
+<form method='POST' action=''> 
+    <table border="0" cellspacing="5" cellpadding="0" width="100%"> 
+        <tr>
+            <th><label for="email">Email</label></th>
+            <td width="75%"><input id="email" name="email" type="text" value="" style="width: 25em;"/></td> 
+        </tr> 
+        <tr>
+            <th><label for="password">Password</label></th> 
+            <td width="75%"><input id="password" name="password" type="password" value="" style="width: 25em;"/></td> 
+        </tr>
+        <tr>
+            <th></th>
+            <td width="75%"><input type="submit" name="submit" id="submit" value="Login" /></td>
+        </tr> 
+    </table>
+</form> 
+[% END %]

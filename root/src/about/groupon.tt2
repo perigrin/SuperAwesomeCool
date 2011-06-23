@@ -1,0 +1,36 @@
+[% WRAPPER common/page.tt2 %]
+
+<div class="copy">
+<h2 style="margin-top: 0px">Welcome Grouponers!</h2>
+
+<p>I'm so glad you decided to come and make some art with us.<p> 
+    
+<p>The first thing you'll need to do is make a reservation by calling <a
+class="tel" href="tel:+1-407-452-2452">407&ndash;452&ndash;2452</a>.
+
+<p>You can of course
+drop in during our <a href="/classes/">Open Studio hours</a>, but we want to
+provide you with the best possible experience. We can't be certain how
+busy we will be on any given day. </p>
+
+<p>During your experience you will:</p>
+<ul>
+    <li>Make a Bowl on the Potter's Wheel  with an artist</li>
+    <li>Be able to paint the bowl, after a short drying time</li>
+    <li>Have the bowl glazed and fired.</li>
+    <li>Have fun!</li>
+</ul>
+
+<p>The bowl will be ready for pickup 14 days later.</p>
+
+<p>That's it. So call now to reserve your time!</p>
+
+<p style="font-weight: bold; font-size: 140%">Sign up for classes on the day you redeem your Groupon and get 10%
+Off!</p>
+</div>
+
+<div class="image">
+    <img src="http://30.media.tumblr.com/tumblr_l4cedzMhmp1qbx1tmo1_500.jpg" style="max-width: 400px; box-shadow: rgba(51, 51, 51, 0.9) 0px 0px 10px;">
+</div>
+
+[% END %]

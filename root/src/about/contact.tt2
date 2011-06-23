@@ -1,0 +1,13 @@
+[% WRAPPER common/page.tt2
+    page_title = 'Contact Us'
+%]
+
+<p>Jamie Moorehead owner of Super Awesome Cool pottery has been a
+potter for 12 years and teaching the art of pottery for the last 3.
+Her studio is a built-to-suit studio in historic Pine Castle.</p>
+
+<p style="font-size: 24pt"><a href="tel:+1-407-452-2452">407-452-2452</a></p>
+<p style="font-size: 24pt"><a href="mailto:jamie@superawesomecool.org">jamie@superawesomecool.org</a></p>
+
+
+[% END %]

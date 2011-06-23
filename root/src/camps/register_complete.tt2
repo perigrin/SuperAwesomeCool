@@ -1,0 +1,16 @@
+[% WRAPPER common/page.tt2
+        page_title = 'Camp Registration Complete'
+%]
+<h2>Thank you [% rest.user.first_name%]!</h2>
+<p>Your camp registration is complete. If you have any questions or
+issues please contact us.</p>
+<div style="margin-top: 5ex">
+<h3>Purchased Tickets</h3>
+<table>
+<tr><th>Dates</th><th>Camp/Class</th>
+[% FOR ticket IN rest.tickets %]
+<tr><td>[% ticket.event.dates %]</td><td>[% ticket.event.name %]</td></tr>
+[%- END %]
+</table>
+</div>
+[% END %]

@@ -1,0 +1,65 @@
+[% WRAPPER common/page.tt2
+    page_title = 'Summer Camps'
+%]
+
+<h2>Orlando</h2>
+
+<p>Located at our Orlando studio at 6100 South Orange Ave. Please download and
+fill out our <a href="/static/SAC_Summer_2011_registration.pdf">Registration
+Packet</a>.</p>
+
+<h3>Summer Camp</h3>
+<dl>
+    <dt>Ages</dt><dd>5 and up </dd>
+    <dt>Dates</dt><dd>Monday - Friday &mdash; June 2-August 19, 9 a.m.-12:15 p.m.</dd>
+    <dt>Tuition</dt><dd>$90 per week or $25 per day</dd>
+</dl>
+<p>Potter's Wheel, Sculpture and Paint-Your-Own Pottery</p>
+<p>Campers learn about everything clay has to offer 
+as they throw on the potter’s wheel and make cute 
+animals, cool lidded jars, amazing sculptures and 
+anything else they can imagine!</p>
+
+<h3>Kids Club Wednesdays</h3>
+<dl>
+    <dt>Ages</dt><dd>5 and up </dd>
+    <dt>Dates</dt><dd>Wednesdays &mdash; June 8-August 17, 12:30 p.m.-2:30 p.m.</dd>
+    <dt>Tuition</dt><dd>$10 per week or $75 for the summer</dd>
+</dl>
+<p>Bring your lunch and chill out with us while we party 
+pottery-style! We will do a different project each 
+Wednesday, play games and listen to cool music.</p>
+
+<h2>Kissimmee</h2>
+
+<p>Located at the <a
+href="http://maps.google.com/maps?ie=UTF8&q=Oak+Street+Community+Center+Kissimmee&fb=1&gl=us&hq=Oak+Street+Community+Center&hnear=Kissimmee&cid=0,0,3636480049418607745&ei=Ly_eS6idOYjw9ASzpe2wBw&ved=0CAcQnwIwAA&t=h&z=16&iwloc=A">Oak
+Street Community Center</a>. Register by contacting them at <a
+href="tel:+1-407-847-2388">407.847.2388</a></p>
+
+
+<h3>Special Art through Storytelling Camp </h3>
+<dl>
+    <dt>Ages</dt><dd>3 to 5</dd>
+    <dt>Dates</dt><dd>Fridays &mdash; June 3-August 26, 12 p.m.-1 p.m.</dd>
+    <dt>Tuition</dt><dd>$25 per month</dd>
+</dl>
+<p>Each week kids explore wet clay and other art 
+mediums through story, interactive play and art. 
+Each week features a different book or subject
+</p>
+
+<h3>Special Pottery Camp</h3>
+<dl>
+    <dt>Ages</dt><dd>5 and up </dd>
+    <dt>Dates</dt><dd>Monday - Friday &mdash; July 11-15, 9 a.m.-12 p.m.<br/>
+    August 1-5, 9 a.m.-12 p.m.
+    </dd>
+    <dt>Tuition</dt><dd>$80 per week</dd>
+</dl>
+<p>Kids will learn to throw on the potter’s wheel and 
+make cute animals, cool lidded jars, awesome slab- 
+built projects, amazing sculptures, and anything 
+else they can imagine!</p>
+
+[% END %]

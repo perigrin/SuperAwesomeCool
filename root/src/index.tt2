@@ -1,0 +1,76 @@
+[% WRAPPER common/page.tt2
+    page_title = '&nbsp;'
+%]
+    <div id="hours">
+    <h2 style="margin-top: 0px">Closed for  Memorial Day</h2>
+    <p>We will be closed Tuesday May 31st for the Memorial Day holiday. We will re-open at our normal time on Wednesday June 1st.</p>
+
+    <h3>Welcome Grouponers!</h3>
+    <p>For details on how to activate your Groupon please see our <a href="/about/groupon">special instructions</a>!</p>
+
+    <h3>Grand Opening Special</h3>
+    <p>We have a $99 dollar Birthday Party Special to celebrate our Grand
+    Opening. See our <a href="/about/specials">Specials Page</a>.</p>
+
+    <h2>Studio Hours</h2>
+    <table>
+        <tr>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <td>Open Studio <br/> 1:00 &ndash; 5:00pm</td>
+            <td>Open Studio <br/> 1:00  &ndash; 5:00pm</td>
+            <td>Open Studio <br/> 1:00  &ndash; 6:00pm</td>
+            <td>Kid's &amp; Family Class <br/> 10:00 - 11:00 am</td>
+            <td>Open Studio <br/> 12:00  &ndash; 6:00pm</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>Teen Class <br/> 11:15am &ndash; 12:30pm</td>
+        </tr>
+        <tr>
+            <td>Family Class <br/>5:00&ndash;6:00pm</td>
+            <td>Kid's Class <br/>5:00&ndash;6:00pm</td>
+            <td>&nbsp;</td>                        
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Adult Class <br/>6:30&ndash;8:00pm</td>
+            <td>Open Studio <br/> 6:00 &ndash; 7:30pm</td>
+            <td>Teen Class <br/> 6:00&ndash;7:15pm</td>
+            <td>Adult Class <br/> 1:30 &ndash; 3:00 pm</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Open Studio <br/> 8:00 &ndash; 9:00pm</td>
+            <td>Adult Class <br/>7:30&ndash;9:00pm</td>
+            <td>Open Studio <br/> 7:15  &ndash; 9:00pm</td>
+            <td>Open Studio <br/> 3:00  &ndash; 9:00pm</td>
+            <td>&nbsp;</td>            
+    </table>
+    </div>
+    <div id="quick_links">
+        <h2>Quick Links</h2>
+        <nav>
+            <menu>
+                <li><a href="/about/potters_wheel_experience">Potter's Wheel Experience</a></li>
+                <li><a href="/classes">Classes</a></li>
+                <li><a href="/about/preschool">Preschool Classes</a></li>                
+                <li><a href="/camps">Summer Camps</a></li>
+                <li><a href="/about/school_programs/">School Programs</a></li>
+                <li><a href="/about/field_trips/">Field Trips</a></li>
+                <li><a href="/about/date_night/">Date Night</a></li>
+                <li><a href="/about/birthday_parties/">Birthday Parties</a></li>
+                <li><a href="/about/special_events/">Special Events</a></li>
+                <li><a href="http://blog.superawesomecool.org">Blog</a></li>
+                <li><a href="/about/specials">Specials</a></li>
+            </menu>
+        </nav>
+    </div>
+</div>[% END %]

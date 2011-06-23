@@ -1,0 +1,18 @@
+[% WRAPPER common/page.tt2
+    page_title = 'Field Trips'
+%]
+
+<p>Book us for your school, summer camp, day care, 4-H group, Girl Scout
+troop, homeschool group or just friends and see how much fun getting
+messy can be!</p>
+
+<p>Multiple date discounts and multiple class discounts! Low minimums!
+Groups further than 20 miles from Downtown Orlando may need to pay a
+travel fee.</p>
+
+<p>Call or email to book.</p>
+
+<p style="font-size: 24pt"><a href="tel:+1-407-452-2452">407-452-2452</a></p>
+<p style="font-size: 24pt"><a href="mailto:jamie@superawesomecool.org">jamie@superawesomecool.org</a></p>
+
+[% END %]

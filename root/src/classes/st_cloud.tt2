@@ -1,0 +1,5 @@
+[% WRAPPER common/page.tt2 %]
+<h2><a href="/classes">Classes</a> &bull; St. Cloud</h2>
+
+
+[% END %]

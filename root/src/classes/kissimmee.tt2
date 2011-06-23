@@ -1,0 +1,23 @@
+[% WRAPPER common/page.tt2 %]
+
+<h2><a href="[% c.uri_for('/classes') %]">Classes</a> &bull; Kissimmee</h2>
+ 
+<p>Pottery classes in Kissimmee are held at the <a href="http://www.kissimmee.org/ch_dept_parks.aspx?id=529">Oak Street Park
+Community Center</a>, located at 717 N Palm Ave Kissimmee, FL 34741. Their phone number is (407) 847-2388. Please contact them to register.</p> 
+ 
+<p>Classes are held on Wednesdays and you can sign up on monthly basis.</p> 
+ 
+<h3>Schedule</h3>
+ 
+<table style="width: 33%">  
+    <tr>
+        <th>Wednesday</th> 
+    </tr> 
+    <tr>        
+        <td> 
+            Family Clay<br/>($25 1st person  / $15 additional family members) ages 3+ <br/>6:45-7:45 
+        </td>       
+    </tr> 
+</table>
+
+[% END %]

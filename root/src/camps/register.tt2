@@ -1,0 +1,68 @@
+[% WRAPPER common/page.tt2
+    page_title = 'Register for Camp'
+%]
+<div class="error">[% c.flash.errors.values.join('<br/>') %]</div>
+<form method="post" action="">    
+[% IF c.user_exists %]
+    <h3>Hey There [% c.user.get_object.first_name %]!</h3>
+[% ELSE %]
+<h3>Register or <a href="[% c.uri_for('/login') %]">Log In</a></h3>
+    <table border="0" cellspacing="5" cellpadding="0" width="100%">
+        <tbody>
+            <tr>
+                <th><label for="email">Email</label></th>
+                <td><input id="email" name="email" type="text" value="" style="width: 25em;"/></td>
+            </tr>
+            <tr>
+                <th><label for="first_name">First Name</label></th>
+                <td><input id="first_name" name="first_name" type="text" value="" style="width: 25em;"/></td>
+            </tr>
+            <tr>
+                <th><label for="last_name">Last Name</label></th>
+                <td><input id="last_name" name="last_name" type="text" value="" style="width: 25em;"/></td>
+            </tr>
+            <tr>
+                <th><label for="password">Password</label></th>
+                <td><input id="password" name="password" type="password" value="" style="width: 25em;"/></td>
+            </tr>
+            <tr>
+                <th><label for="confirm_password">Confirm Password</label></th>
+                <td><input id="confirm_password" name="confirm_password" type="password" value="" style="width: 25em;"/></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input id="agree_tos" name="agree_tos" type="checkbox" value="0"/> <label for="agree_tos">You accept our <a style="text-decoration:underline;" href="/about/terms-of-service/">Terms of Service</a>.</label></td>
+            </tr>
+        </tbody>
+    </table>
+[% END %]
+<p>Please choose which camps you would like your child or children to attend.</p>
+<table style="font-size: 10pt">
+    <tr>
+        <th>&nbsp;</th>
+        <th>Dates</th>
+        <th>Class</th>
+    </tr>
+    [% FOR camp IN camps.all -%]
+    <tr>
+        <td><input name="[% camp.id %]" type="checkbox" /></td>
+        <td>[% camp.dates %]</td>
+        <td><a href="[% c.uri_for('/camp', camp.id) %]">[% camp.name %]</a></td>
+    </tr>
+    [% END %]
+</table>
+<p>
+    Number of children? 
+    <select name="children">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+</p>
+<div style="margin-top: 2ex">
+    <input type="submit" /> <input type="reset" />
+</div>
+</form>
+[% END %]

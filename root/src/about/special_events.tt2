@@ -1,0 +1,15 @@
+[% WRAPPER common/page.tt2 %]
+
+<h2>Special Events</h2>
+
+<p>Call today to talk about customizing an event for your group. Special
+event topics include Potter's Wheel, Sculpture, and Paint Your Own
+Pottery<a anchor="two"></a><a href="#foot2">*</a>.</p>
+  
+<ul>
+<li>Groups: $25 dollars per person for two (2) hours of instruction, minimum of six (6) people.</li>
+<li>Private Instruction: $45 per hour.</li>
+<li>Couple's Instruction: $70 for one and a half (1.5) hours.</li> 
+</ul>
+
+[% END %]

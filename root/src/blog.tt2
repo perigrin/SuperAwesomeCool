@@ -1,0 +1,7 @@
+[% WRAPPER common/page.tt2
+    page_title = 'Blog'
+%]
+
+<script type="text/javascript" src="http://blog.superawesomecool.org/js"></script>
+
+[% END %]

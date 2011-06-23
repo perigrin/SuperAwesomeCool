@@ -1,0 +1,29 @@
+[% WRAPPER common/page.tt2
+    page_title = 'Birthday Parties'
+%]
+<p>Each package includes 45 minutes to 1 hour of programming and a special
+gift for the birthday child.  When you choose the combo party and or the
+potter's wheel add on, your time will increase to fit the projects and
+needs of the children for your party.</p> 
+ 
+<ul> 
+<li>$175 for a 1 hour wet clay sculpture experience or paint your own pottery
+project (choose from 8" plate or 12 oz mug with upgrades available)</li> 
+<li>$250 for combo party (both wet sculpture and pottery painting)</li> 
+<li>$75 potter's wheel add on to any package</li> 
+<li>$50 6 inch tile add on to any package</li> 
+</ul> 
+ 
+<p>Our rates are for 15 children.</p> 
+ 
+<p>For additional party guests please add:</p> 
+ 
+<ul> 
+<li>$5 per child</li> 
+<li>$7 per child for the combo option</li> 
+<li>$2.50 per child for the potter's wheel add on</li> 
+<li>$2.50 per child for the 6 inch tile add on</li> 
+</ul> 
+ 
+<p>Parties are at your location.<br/>For parties at our location please call for information.</p>
+[% END %]

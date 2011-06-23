@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>[% c.get('name:') %]</title>
+    [% INCLUDE common/style.tt2 %]
+    [% INCLUDE common/script.tt2 %]
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="span-24 smallcaps">[% c.name -%]</h1>
+
+        <div class="span-4"></div>
+
+        <div class="span-16">
+            [% PROCESS common/widgets/navbar.tt2 %]
+
+            <h2 class="smallcaps">Something terrible happened.</h2>
+            <p>
+              An error has occurred.  We're terribly sorry about that, but it's 
+              one of those things that happens from time to time.  Let's just 
+              hope the developers test everything properly before release...
+            </p>
+            <p>
+              Here's the error message, on the off-chance that it means something
+              to you: <pre class="error">[% error %]</pre>
+            </p>
+
+        </div>
+
+        <div class="span-4 last"></div>
+
+        <div class="span-24">[% c.config.copy %]</div>    </div>
+</body>
+</html>

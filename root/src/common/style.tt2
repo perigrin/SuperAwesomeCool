@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="[% c.uri_for('/static/style/site.css') %]" type="text/css" media="screen, projection, print" />

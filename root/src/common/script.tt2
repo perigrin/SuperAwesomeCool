@@ -1,0 +1,30 @@
+<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+
+<script type="text/javascript" charset="utf-8">
+[% IF c.req.user_location;
+l = c.req.user_location;
+ELSE;
+l = c.req.default_location;
+END %]
+    var PMLocation = {
+        latitude: [% l.latitude %],
+        longitude: [% l.longitude %],
+        zoom: 12
+    };
+[% IF c.user_exists;
+u = c.user.get_object;
+%]
+    var PMUser = {
+        can_delete_location: [% u.can_delete_location ? "true" : "false" %],
+        can_edit_location: [% u.can_edit_location ? "true" : "false" %],
+        can_move_location: [% u.can_move_location ? "true" : "false" %]
+    };
+[% ELSE %]
+    var PMUser = {
+        can_delete_location: false,
+        can_edit_location: false,
+        can_move_location: false
+    };
+[% END %]
+</script>
+<script src="/static/js/site.js" type="text/javascript" charset="utf-8"></script>

@@ -1,0 +1,51 @@
+[% WRAPPER common/page.tt2
+    page_title = 'Summer Fun Days'
+%]
+<ul>
+    <li><a href="#monday">Club Monday</a></li>
+    <li><a href="#thursday">Enrichment Thursday</a></li>
+</ul>
+
+<a name="monday"></a>
+<h3>Club Mondays</h3>
+<p>Children will have a flexible schedule that includes some "clubs" that the
+kids will drive with supervision including: Gardening Club, Art Club, Chess
+Club, or Young Entrepreneur Club.</p>
+
+<ul>
+<li>9:45 Parents Drop Off/Kids Social Time</li>
+<li>10:00-11:00 1st Club meeting</li>
+<li>11:00-12:00 Outside PE Class with Blair Miko</li>
+<li>12:00-1:00 Lunch and Outside free time</li>
+<li>1:00-2:00 2nd Club meeting</li>
+<li>2:00-2:45- Free Play with board games and crafts provided</li>
+<li>3:00 Parents Pickup</li>
+</ul>
+
+<p>Cost $30 for the full day, payable weekly.  Purchase a "Crazy
+Eights" card for $200, a flexible pass good for ANY 8 full Club Mondays
+during the summer! Sibling Discounts available.</p>
+
+
+<a name="thursday"></a>
+<h3>Enrichment Thursdays</h3>
+<p>Session 1 June 17- July 22  Session 2 July 29-Aug 19</p>
+<p>Classes such as Plant based Nutrition, Oceanography, Art, Brain Gym, Karate
+Fitness Fun, Yoga, Pottery, Geography, Magic, Science, Recycled Art and
+more!</p>
+<ul>
+<li>9:45 Parents Drop Off/Kids Social Time</li>
+<li>10:00-11:00 Class 1</li>
+<li>11:00-12:00 Class 2</li>
+<li>12:00-1:00 Lunch and Recess</li>
+<li>1:00-2:00 Class 3</li>
+<li>2:00-2:45 Class 4</li>
+<li>3:00 Parents Pickup</li>
+</ul>
+<p>1 class- $12, 2 classes- $10 each, 3 classes- $9 each, 4 classes-$8
+each. (payment plans, sibling discounts and drop in rates available).
+Materials fee vary per class but never unreasonable.</p>
+
+<p>To Register Email <a href="mailto:info@mistyforesthomeschool.com">info@mistyforesthomeschool.com</a></p>
+
+[% END %]

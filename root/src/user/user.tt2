@@ -1,0 +1,17 @@
+[% WRAPPER common/page.tt2%]
+[% user = rest.user %]
+<h2>[% user.first_name%] [% user.last_name%]</h2>
+<dl>
+    <dt>Email</dt><dd><a href="mailto:[% user.email %]">[% user.email %]</a> [% IF user.verified %]<span style="color:green">&#x2713;</span>[% ELSE %]<span style="color: red">x</a>[% END %]</dd>
+    <dt>Roles</dt><dd>[% user.roles.join(',')%]</dd>
+</dl>
+<div style="margin-top: 5ex">
+<h3>Tickets</h3>
+<table>
+<tr><th>Dates</th><th>Camp/Class</th>
+[% FOR ticket IN rest.tickets %]
+<tr><td>[% ticket.event.dates %]</td><td>[% ticket.event.name %]</td></tr>
+[%- END %]
+</table>
+</div>
+[% END %]

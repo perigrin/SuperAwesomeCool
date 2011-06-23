@@ -1,0 +1,12 @@
+[% WRAPPER common/page.tt2%]
+
+<h2>Preschool Muddy Monkeys</h2>
+<dl>
+    <dt>Ages</dt><dd>3 to 5 </dd>
+    <dt>Dates</dt><dd>Tuesdays &mdash; June 7-August 30, 9:30 a.m.-10:30 a.m.</dd>
+    <dt>Tuition</dt><dd>$8 per class or $75 for the whole summer</dd>
+</dl>
+<p>Each week campers will explore wet clay and other 
+mediums through story, interactive play and art.</p>
+
+[% END %]

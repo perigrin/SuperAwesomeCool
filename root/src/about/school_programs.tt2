@@ -1,0 +1,34 @@
+[% WRAPPER common/page.tt2
+    page_title = 'Special Events'
+%]
+
+<p>Becoming a Super Awesome Cool School is EASY!</p>
+
+<p>And its FREE!</p>
+
+<p>Benefits to your school when you sign up:</p>
+<ul>
+<li>No cost to your school</li>
+<li>1 Free birthday party package or 2 Free Date Night vouchers to help with fundraising efforts</li>
+<li>Free scholarship program</li>
+<li>Access to Fundraising packages at a higher profit rate</li>
+<li>Free Potters wheel experience for teachers volunteering their classroom space</li>
+</ul>
+
+<p>Benefits to your students:</p>
+<ul>
+<li>The opportunity to work with clay and printmaking</li>
+<li>Small class sizes</li>
+<li>Classes stimulate and strengthen critical thinking skills as well as
+cognitive and creative skills all while having fun and creating unique pieces
+of art that students can be proud of</li>
+<li>Opportunity to display work in our studio in our student gallery, and
+student artist receptions through out the year</li>
+<li>Classes nurture and support problem solving and goal setting skills</li>
+</ul>
+
+<p>Classes available in 6-10 week sessions at $11 per class, sessions paid in full.</p>
+
+<p>Classes developed to work before school, after school, as well as inside after-school programs.</p>
+
+[% END %]

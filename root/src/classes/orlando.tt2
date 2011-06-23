@@ -1,0 +1,75 @@
+[% WRAPPER common/page.tt2 %]
+<h2>Orlando</h2>
+ </a>
+ <p>To sign up for our next session please e-mail or call us. If you
+ would like to arrange private instruction, a group event or a couple's
+ night just e-mail with your preferred date and time (prices and details
+ are below). Please bring an old towel and wear an old t-shirt to class,
+ things will get messy.
+
+ <p>Available 7 Days a week for private classes, groups &amp; events.</p>
+
+ <h3>Schedule</h3>
+ <table>
+     <tr>
+         <th>Tuesday</th>
+         <th>Wednesday</th>
+         <th>Friday</th>
+         <th>Saturday</th>
+     </tr>
+     <tr>
+         <td>Family Class <br/>5:00&ndash;6:00pm</td>
+         <td>Kid's Class <br/>5:00&ndash;6:00pm</td> 
+         <td>Teen Class <br/> 6:00&ndash;7:00pm</td> 
+         <td>Kid's &amp; Family Class <br/> 10:00 a - 11:00 am</td>
+     </tr>
+     <tr>
+          <td>Adult Class <br/>6:30&ndash;8:00pm</td>
+          <td>Adult Class <br/>7:30&ndash;9:00pm</td>
+          <td>&nbsp;</td>
+          <td>Adult Class <br/> 11:15 a - 12:30 p</td>                 
+     </tr>
+     <tr>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+         <td>Teen Class <br/> 1:30 p - 3:00 p</td>
+     </tr>
+ </table>
+
+ <h3>Prices <span style="font-size: 50%">(All materials included<a id="one"></a><sup><a href="#foot1">1</a></sup>)</span></h3>
+ <table>
+     <tr>
+         <th>Kid &amp; Family Classes</th>
+         <th>Adult Classes</th>
+     </tr>
+     <tr>
+          <td>1 Class <br/> $17.50</td>
+          <td>1 Class<br/>$30.00</td>
+     </tr>
+     <tr>
+          <td>4 Classes <br/>(Use within 5 Weeks of Activation Date)<br/>$39.00</td>
+          <td>4 Classes <br/>(Use within 5 Weeks of Activation Date)<br/>$$75.00</td>
+     </tr>
+     <tr>
+          <td>8 Classes <br/>(Use within 10 Weeks of Activation Date)</br>$64.00</td>
+          <td>8 Classes <br/>(Use within 10 Weeks of Activation Date)</br$135.00</td>
+    </tr>
+     <tr>
+         <td>Monthly <br/>$12.00/mo for the 1st Class, <br/>$8.00/mo for each additional class</td>
+         <td>Monthly <br/>$20.00/mo for the 1st Class, <br/>$15.00/mo for each additional class</td>
+     </tr>
+ </table>
+
+ <h3>Open Studio Time</h3>
+
+ <p>Open Studio Time for Potter's Wheel Experience, Paint your own pottery
+ projects, and drop-in wet clay projects when class is not in session.</p>
+
+ [% INCLUDE common/open_hours.tt2 %]
+ 
+ <p><sup><a id="foot1" href="">1</a></sup>Additional Charges May Apply</p>
+
+
+
+[% END %]

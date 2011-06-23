@@ -1,0 +1,38 @@
+[% WRAPPER common/page.tt2
+    page_title = 'Ceramics Camp Kissimmee'
+%]
+
+<h2><a href="/camps">Camps</a> &bull; Kissimmee</h2>
+
+<p>Located at the <a
+href="http://maps.google.com/maps?ie=UTF8&q=Oak+Street+Community+Center+Kissimmee&fb=1&gl=us&hq=Oak+Street+Community+Center&hnear=Kissimmee&cid=0,0,3636480049418607745&ei=Ly_eS6idOYjw9ASzpe2wBw&ved=0CAcQnwIwAA&t=h&z=16&iwloc=A">Oak
+Street Community Center</a>. Register by contacting them at <a
+href="tel:+1-407-847-2388">407.847.2388</a></p>
+
+
+<h3>Special Art through Storytelling Camp </h3>
+<dl>
+    <dt>Ages</dt><dd>3 to 5</dd>
+    <dt>Dates</dt><dd>Fridays &mdash; June 3-August 26, 12 p.m.-1 p.m.</dd>
+    <dt>Tuition</dt><dd>$25 per month</dd>
+</dl>
+<p>Each week kids explore wet clay and other art 
+mediums through story, interactive play and art. 
+Each week features a different book or subject
+</p>
+
+<h3>Special Pottery Camp</h3>
+<dl>
+    <dt>Ages</dt><dd>5 and up </dd>
+    <dt>Dates</dt><dd>Monday - Friday &mdash; July 11-15, 9 a.m.-12 p.m.<br/>
+    August 1-5, 9 a.m.-12 p.m.
+    </dd>
+    <dt>Tuition</dt><dd>$80 per week</dd>
+</dl>
+<p>Kids will learn to throw on the potter’s wheel and 
+make cute animals, cool lidded jars, awesome slab- 
+built projects, amazing sculptures, and anything 
+else they can imagine!</p>
+
+
+[% END %]

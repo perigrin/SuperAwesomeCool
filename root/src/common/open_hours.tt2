@@ -1,0 +1,23 @@
+<table>
+    <tr>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+    <tr>
+        <td>1:00 &ndash; 5:00pm</td>
+        <td>1:00  &ndash; 5:00pm</td>
+        <td>1:00  &ndash; 6:00pm</td>
+        <td>&nbsp;</td>
+        <td>12:00  &ndash; 6:00pm</td>
+    </tr>
+    <tr>
+        <td>8:00 &ndash; 9:00pm</td>
+        <td>6:00 &ndash; 7:30pm</td>
+        <td>7:00  &ndash; 9:00pm</td>
+        <td>3:00  &ndash; 9:00pm</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>

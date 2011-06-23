@@ -1,0 +1,9 @@
+[% WRAPPER common/page.tt2%]
+
+<h2>Specials</h2>
+
+<h3>Grand Opening Special</h3>
+<p>To celebrate our Grand Opening we are offering a $99 Birthday Party.</p>
+<p>This package is a 6" Tile Paint-your-own Pottery experience for up to twenty (20) children.</p>
+
+[% END %]

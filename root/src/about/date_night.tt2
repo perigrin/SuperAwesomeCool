@@ -1,0 +1,14 @@
+[% WRAPPER common/page.tt2
+    page_title = 'Date Night'
+%]
+
+<p>A unique experience that something truely different. Come give the
+Potter's Wheel a try. Surprise that specials someone with a romantic evening.</p>
+
+<ul>
+<li>$70 for an hour and a half couples "date night" instruction</li>
+</ul>
+
+<p>By Appointment Only</p>
+
+[% END %]

@@ -1,0 +1,9 @@
+[% INCLUDE common/style.tt2 %]
+[% INCLUDE common/script.tt2 zoom_level = 12 %]
+
+<div onload="initialize()" onunload="GUnload()">
+    <div class="main">        
+        <h2>Congratulations [% user.first_name %] [% user.last_name %]</h2>
+        <p>[% rest.user.email %] has been verified.</p>
+    </div>
+</div>
