@@ -4,21 +4,41 @@ use Bread::Board::Declare;
 use Plack::Builder;
 use Plack::Middleware::Magpie;
 
+has template_root => (
+    isa   => 'Str',
+    is    => 'ro',
+    value => './root/src',
+);
+
+has template_resource => (
+    isa   => 'ArrayRef',
+    is    => 'ro',
+    block => sub {
+        my $s = shift;
+        [
+            'SuperAwesomeCool::Resource::Template',
+            {
+                root      => $s->param('template_root'),
+                extension => '.tt2',
+                dir_index => 'index.tt2',
+            }
+        ];
+    },
+    dependencies => ['template_root'],
+);
+
 has resource_map => (
     isa   => 'HashRef',
     is    => 'ro',
     block => sub {
         my $s = shift;
         {
-            '/static'      => ['Magpie::Resource::File', { root => './root/static'} ],
-            '/'            => $s->param('template_resource'),
+            '/static' =>
+              [ 'Magpie::Resource::File', { root => './root/static' } ],
+            '/' => $s->param('template_resource'),
         };
     },
-    dependencies => [
-        qw(
-          template_resource
-          )
-    ],
+    dependencies => [qw(template_resource)],
 );
 
 has app => (
